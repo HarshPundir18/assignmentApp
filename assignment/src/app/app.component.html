@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="compType">
+    <p>Please input component name from user,admin,home,customer</p>
+  <input type="text" formControlName="componentName" />
+  <button type="submit" (click)="addComponent()">Add Component</button>
+  </form>
+
+
+  <div>
+    <h3>New Added Components Here!</h3>
+    <ng-container #container></ng-container>
+  </div>
+</div>
